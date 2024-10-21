@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selectors</title>
+    <style>
+        /* Element Selector. */
+        /* div{
+            background-color: red;
+        } */
+        
+        /* Class Selector. */
+        .red{
+            background-color: red;
+        }
+
+        /* Id Selector. */
+        #green{
+            background-color: green;
+        }
+
+        /* Child Selector. */
+        div > p{
+            color:blue;
+            background-color: bisque;
+        }
+
+        /* Descendant Selector. */
+        div h1{
+            background-color: aqua;
+            color: brown;
+        }
+
+        /* Universal Selector. */
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Pseudo Selector. */
+        a:visited{
+            color: yellow;
+        }
+        a:link{
+            color: green;
+        }
+        a:active{
+            background-color: red;
+        }
+        a:hover{
+            background-color: black;
+        }
+        p:first-child{
+            background-color: aqua;
+        }
+
+    </style>
+</head>
+<body>
+    <main>
+        <p>This is Paragraph 1.</p>
+        <p>This is Paragraph 2.</p>
+    </main>
+    <div class="red">
+        I am a Div.
+        <p>I am paragraph inside the div.</p>
+        <h1>I am header inside the div.</h1>
+    </div>
+    <div id="green">
+        I am another Div.
+        <article>
+            <p>I am paragraph inside the article.</p>
+            <h1>I am header inside the article.</h1>
+        </article>
+    </div>
+    <a href="http://google.com">GotoGoogle</a>
+    <a href="http://facebook.com">GotoFacebook</a>
+</body>
+</html>
