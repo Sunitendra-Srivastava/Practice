@@ -3,9 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>CSS Specificity and Cascade</title>
+    <style>
+
+        /* The Specificity of this selector is 1. */
+        h1{
+            color: aqua;
+        }
+        
+        /* The Specificity of this selector is 1 + 10 = 11. */
+        h1.yellow{
+            color: yellow;
+        }
+
+        /* The Specificity of this selector is 10. */
+        .cred{
+            color: red;
+        }
+
+        /* The Specificity of this selector is 10. */
+        .cpurple{
+            color: purple;
+        }
+
+        /* The Specificity of this selector is 10. */
+        /* This is an example of Attribute Selector. */
+        [data-x= a]{
+            background-color: beige;
+        }
+        
+        /* The Specificity of this selector is 1 + 10 + 10 + 10 + 10 = 41. */
+        a.harryclass.rohan-class[href]:hover{
+            color:black;
+        }
+    </style>
 </head>
 <body>
-    
+    <div>
+        <!-- <h1 style="color: brown;">CSS Specificity</h1> -->
+        <h1 class="yellow cred cpurple" data-x="a">CSS Specificity</h1>
+    </div>
 </body>
 </html>
