@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Variables</title>
+    <style>
+        :root{
+            --color: rgb(249, 187, 112);
+            --seccolor: bisque;
+            --defpad: 25px;
+            --defop: 0.4;
+        }
+
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .nav{
+            background-color: var(--color);
+        }
+
+        ul{
+            display: flex;
+        }
+
+        ul li{
+            list-style: none;
+            padding: var(--defpad);
+        }
+
+        ul li:first-child{
+            --color:brown;
+            opacity: var(--defop);
+            background-color: var(--color, blue); /* Here blue color is fallback color which is used when the variable is not found. */
+        }
+
+        .container{
+            background-color: var(--seccolor);
+        }
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact</li>
+        </ul>
+    </div>
+    <div class="container">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae veniam officia a voluptas quidem fugiat ipsa sed magni beatae exercitationem quod facere, unde sequi deleniti impedit minus doloribus eaque quibusdam cumque reiciendis at ea. Alias?
+    </div>
+</body>
+</html>
