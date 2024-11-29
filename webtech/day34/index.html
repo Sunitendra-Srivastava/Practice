@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Float and Clear</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        img{
+            /* float: left; */
+            float: right;
+        }
+        .cards{
+            border: 2px solid black;
+            display: flow-root;
+        }
+        .card{
+            border: 2px solid red;
+        }
+
+        .card:nth-child(3){
+            /* clear: right; */
+            clear: both;
+            background-color: bisque;
+        }
+    </style>
+</head>
+<body>
+    <div class="cards">
+        <img src="https://imageupscaler.com/wp-content/uploads/2024/07/deblured-cutty-fox.jpg" alt="image" width="430">
+        <div class="card">
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure deleniti, perspiciatis in laborum tempore sint ipsum eveniet aspernatur doloremque voluptate beatae natus cupiditate hic iusto doloribus alias cum, provident rerum corporis similique quidem quos.
+            </p>
+        </div>
+        <div class="card">
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nobis et facilis sequi sint. Porro, et nesciunt. Labore, incidunt. Rem doloribus nihil cum natus blanditiis modi, esse animi quisquam sed ullam molestiae, facere et eveniet necessitatibus harum, consequuntur nam sequi vel deserunt! Dolor soluta molestias optio ratione maxime magni sint nobis quod officiis. Nemo consequatur nobis excepturi facere, quod veniam quidem quia aperiam sed nulla possimus molestias eligendi earum quae. Enim, recusandae voluptatem ratione eligendi voluptate sed dolorum asperiores qui sint, eius culpa. Blanditiis accusantium consectetur neque maxime facere praesentium fuga maiores, excepturi minima nobis quisquam temporibus dolore ut! Ad eius magnam tempora ea recusandae dignissimos qui voluptas pariatur nulla consequuntur, repudiandae beatae enim, eum voluptatum culpa, nemo similique atque architecto. Aperiam, illo voluptatem? Possimus eaque deserunt unde amet temporibus cum hic accusantium dolore iure, magnam incidunt animi labore non sed repellendus eos optio facere sunt sapiente tempore exercitationem nisi repellat. Repellendus totam quisquam necessitatibus numquam magnam minus optio est, fugiat provident fugit ullam at odit deleniti enim saepe velit voluptatem natus! Voluptate corrupti quo et animi ipsam repellendus, dignissimos error dolor similique non dolores quae ut numquam, perspiciatis ex, rem vel iure dolorum reiciendis fugiat maiores sapiente? Minus voluptatum tempore quia! Maiores possimus aspernatur minima fugit modi enim laborum ab, odio natus accusamus assumenda tempora doloremque consequuntur vitae! Fugiat unde quibusdam, sapiente explicabo quaerat quasi officiis quos reiciendis quis nesciunt doloribus commodi sit in distinctio sequi incidunt animi omnis earum illo magnam eveniet quae! Vero iure repudiandae illo officiis doloremque quam optio consectetur eaque sit similique, deserunt cumque. Eaque, voluptatibus quam accusantium dignissimos accusamus, nesciunt itaque maxime ut vel mollitia, explicabo vitae perspiciatis officia. Fugiat eveniet officia voluptatum vero? Inventore modi est eum voluptatum adipisci facere quas doloribus obcaecati, ad maxime corporis atque eligendi in, iusto repudiandae vitae! Tempora tenetur et qui laborum placeat ducimus, reiciendis atque, nostrum officia optio ut dignissimos minus ea corrupti dolores error quia. Magnam autem eum provident fugit iusto, repellendus sunt molestiae magni aspernatur minus, perspiciatis suscipit facilis?</p>
+        </div>
+        <div class="card">Card-3</div>
+    </div>
+</body>
+</html>
