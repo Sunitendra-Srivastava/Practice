@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More on CSS Selectors</title>
+    <style>
+        .box:first-child{
+            background-color: bisque;
+        }
+
+        .box::first-line{
+            color: brown;
+        }
+        
+        /* .boxes *{
+            color: blue;
+            border: 2px solid saddlebrown;
+        } */
+
+        /* p, a, .box, [data-color="primary"]{
+            color: red;
+        } */
+
+        /* .box:nth-child(even){
+            background-color: blue;
+        }
+
+        .box:nth-last-child(1){
+            background-color: red;
+        } */
+
+        /* pseudo elements */
+        .boxes::before{
+            content: "This is the before content.";
+            color: red;
+        }
+
+        .boxes::after{
+            content: "This is the after content.";
+            color: blue;
+        }
+
+        /* selection */
+        ::selection{
+            color: aqua;
+            background-color: black;
+        }
+
+        .box::first-letter{
+            color:aqua;
+            font-size: 25px;
+        }
+
+        input::placeholder{
+            color: aquamarine;
+        }
+    </style>
+</head>
+<body>
+    <div class="boxes">
+        <div class="box" data-color="primary">This is box 1. <br> Lorem ipsum dolor sit amet consectetur adipisicing elit. Id odio quas consequuntur cumque perspiciatis esse blanditiis, ea, voluptatem excepturi dolorum asperiores eaque labore nostrum. Error, pariatur animi. Neque eos praesentium illum delectus sapiente totam, cupiditate adipisci quaerat dignissimos repellat laboriosam facilis iure ut incidunt, voluptas vero est ipsum vitae magni! Accusantium sint, tempora atque fugiat quos quisquam laboriosam facere deserunt, necessitatibus quae repellat dolorum! Optio asperiores provident dignissimos cumque quibusdam officiis eos nisi sapiente iusto numquam nobis vitae labore beatae rem reprehenderit eveniet, quia accusamus molestias ipsa. Ea, velit esse!</div>
+        <div class="box">This is box 2. <br> Lorem ipsum dolor sit amet consectetur adipisicing elit. Id odio quas consequuntur cumque perspiciatis esse blanditiis, ea, voluptatem excepturi dolorum asperiores eaque labore nostrum. Error, pariatur animi. Neque eos praesentium illum delectus sapiente totam, cupiditate adipisci quaerat dignissimos repellat laboriosam facilis iure ut incidunt, voluptas vero est ipsum vitae magni! Accusantium sint, tempora atque fugiat quos quisquam laboriosam facere deserunt, necessitatibus quae repellat dolorum! Optio asperiores provident dignissimos cumque quibusdam officiis eos nisi sapiente iusto numquam nobis vitae labore beatae rem reprehenderit eveniet, quia accusamus molestias ipsa. Ea, velit esse!</div>
+        <div class="box">This is box 3. <br> Lorem ipsum dolor sit amet consectetur adipisicing elit. Id odio quas consequuntur cumque perspiciatis esse blanditiis, ea, voluptatem excepturi dolorum asperiores eaque labore nostrum. Error, pariatur animi. Neque eos praesentium illum delectus sapiente totam, cupiditate adipisci quaerat dignissimos repellat laboriosam facilis iure ut incidunt, voluptas vero est ipsum vitae magni! Accusantium sint, tempora atque fugiat quos quisquam laboriosam facere deserunt, necessitatibus quae repellat dolorum! Optio asperiores provident dignissimos cumque quibusdam officiis eos nisi sapiente iusto numquam nobis vitae labore beatae rem reprehenderit eveniet, quia accusamus molestias ipsa. Ea, velit esse!</div>
+        <input type="text" placeholder="Type your name here."><br>
+    </div>
+</body>
+</html>
