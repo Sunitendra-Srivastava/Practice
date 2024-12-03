@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise-5</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+    </style>
+    <style>
+        /* :root{
+            --primary-color: #ad5afacc;
+            --text-color: white;
+            --secondary-color: #e3cff5cc;
+        } */
+
+        :root{
+            --bg: rgba(162, 41, 41, 0.621);
+            --primary-color: brown;
+            --text-color: black;
+            --text:white;
+            --secondary-color: bisque;
+        }
+
+        body{
+            /* background-color: var(--secondary-color); */
+            /* position: relative; */
+        }
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: "Poppins", serif;
+        }
+
+        header{
+            position:sticky;
+            top: 0px;
+            border: 1px solid var(--text-color);
+        }
+        nav {
+            background-color: var(--primary-color);
+            padding: 12px 0px;
+
+        }
+
+        ul li{
+            list-style: none;
+            display: inline;
+            padding: 23px;
+            font-weight: bolder;
+        }
+
+        ul li a{
+            text-decoration: none;
+            color: var(--text);
+        }
+
+        footer{
+            background-color: var(--primary-color);
+            color: var(--text);
+            font-weight: bolder;
+            padding: 23px;
+            text-align: center;
+            border: 1px solid var(--text-color);
+        }
+        main{
+            height: 140vh;
+            background-color: var(--bg);
+
+        }
+        .boxes{
+            height: 90vh;
+            width: 98%;
+            margin: 0vw 1vw;
+            background-color: var(--secondary-color);
+            border: 1px solid var(--text-color);
+        }
+        
+        .box1{
+            width: 40vw;
+            height: 50vh;
+            background-color: var(--primary-color);
+            float: left;
+            margin-top: 20vh;
+            margin-left: 5vw;
+            border: 2px solid var(--text-color);
+        }
+        
+        .box2{
+            width: 40vw;
+            height: 50vh;
+            background-color: var(--primary-color);
+            float: right;
+            margin-top: 20vh;
+            margin-right: 5vw;
+            border: 2px solid var(--text-color);
+        }
+
+        .content{
+            background-color: var(--primary-color);
+            color: var(--text);
+            text-align: center;
+            width: 80vw;
+            height: 20vh;
+            border-radius: 30px;
+            margin-top: 15vh;
+            margin-left: 8vw;
+            border: 2px solid var(--text-color);
+
+        }
+        .content h1{
+            /* padding-left: 7vw; */
+            padding: 8vh 7vw;
+            font-weight: bold;
+            font-size: medium;
+        }
+        .logo{
+            width: 60px;
+            height: 60px;
+            border-radius: 50px;
+            text-align: center;
+            background-color: var(--text);
+            position: fixed;
+            bottom: 9px;
+            right: 3px;
+            color: var(--primary-color);
+            font-weight: bolder;
+        }
+        .logo p{
+            padding: 2vh 1vw;
+        }
+    </style>
+</head>
+<body>
+    <div class="logo">
+        <p>LG</p>
+    </div>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/">About</a></li>
+                <li><a href="/">Services</a></li>
+                <li><a href="/">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="boxes">
+            <div class="box1"></div>
+            <div class="box2"></div>
+        </div>
+        <div class="content">
+            <h1>This is a Content Section of the Webpage.</h1>
+        </div>
+    </main>
+    <footer>This is a Footer</footer>
+</body>
+</html>
