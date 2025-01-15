@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Transform</title>
+    <style>
+        .container{
+            height: 300px;
+            width: 100%;
+            border: 2px solid black;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+
+        }
+        .box1{
+            width: 100px;
+            height: 100px;
+            border: 2px solid purple;
+            background-color: aqua;
+            transform: rotate(20deg);
+        }
+
+        .box2{
+            width: 100px;
+            height: 100px;
+            border: 2px solid purple;
+            transform: rotate(0.18turn);
+            background-color: aqua;
+        }
+        .box3{
+            width: 100px;
+            height: 100px;
+            border: 2px solid purple;
+            background-color: aqua;
+            transform: rotateX(70deg);
+        }
+        .box4{
+            width: 100px;
+            height: 100px;
+            border: 2px solid purple;
+            background-color: aqua;
+            transform: rotateY(70deg);
+        }
+        .box5{
+            width: 100px;
+            height: 100px;
+            border: 2px solid purple;
+            background-color: aqua;
+            transform: rotateZ(70deg);
+        }
+        .box6{
+            width: 100px;
+            height: 100px;
+            border: 2px solid purple;
+            background-color: aqua;
+            transform: scale(1.5);
+        }
+        .box7{
+            width: 100px;
+            height: 100px;
+            border: 2px solid purple;
+            background-color: aqua;
+            transform: skew(5deg);
+        }
+        .box8{
+            width: 100px;
+            height: 100px;
+            border: 2px solid purple;
+            background-color: aqua;
+            transform: translateX(100px)
+        }
+        .box9{
+            width: 100px;
+            height: 100px;
+            border: 2px solid purple;
+            background-color: aqua;
+            transform: translateY(100px) skew(4deg);
+        }
+        .box10{
+            width: 100px;
+            height: 100px;
+            border: 2px solid purple;
+            background-color: aqua;
+            transform-origin: 40px;
+            transform: rotate(45deg);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box1">Box-1</div>
+        <div class="box2">Box-2</div>
+        <div class="box3">Box-3</div>
+        <div class="box4">Box-4</div>
+        <div class="box5">Box-5</div>
+        <div class="box6">Box-6</div>
+        <div class="box7">Box-7</div>
+    </div>
+    <div class="container">
+        <div class="box8">Box-8</div>
+        <div class="box9">Box-9</div>
+        <div class="box10">Box-10</div>
+    </div>
+</body>
+</html>
